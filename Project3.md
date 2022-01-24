@@ -30,7 +30,7 @@ sudo apt-get install -y nodejs
 ```
 The command above installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu, it is used to install Node modules & packages and to manage dependency conflicts.
 
-[Screenshot1](Media/Project3/Screenshot1.png)
+![Screenshot1](Media/Project3/Screenshot1.png)
 
 To verify the node installation run the command below
 ```bash
@@ -66,7 +66,7 @@ npm init
 ```
 Run the ls command to confirm that the package.json file was created.
 
-[Screenshot2](Media/Project3/Screenshot2.png)
+![Screenshot2](Media/Project3/Screenshot2.png)
 
 ___
 Installing Expressjs
@@ -116,7 +116,7 @@ node index.js
 ```
 If every thing goes well, you should see Server running on port 5000 in the terminal.
 
-[Screenshot3](Media/Project3/Screenshot3.png)
+![Screenshot3](Media/Project3/Screenshot3.png)
 
 Open port 5000 in the EC2 Security Groups, this enables access to your sever through port 5000.
 
@@ -134,7 +134,7 @@ curl -s http://169.254.169.254/latest/meta-data/public-hostname
 ```
 for Public DNS name.
 
-[Screenshot4](Media/Project3/Screenshot4.png)
+![Screenshot4](Media/Project3/Screenshot4.png)
 
 ___
 Routes
@@ -187,7 +187,7 @@ router.delete('/todos/:id', (req, res, next) => {
 
 module.exports = router;
 ```
-[Screenshot5](Media/Project3/Screenshot5.png)
+![Screenshot5](Media/Project3/Screenshot5.png)
 
 ___
 Models
@@ -271,7 +271,7 @@ Todo.findOneAndDelete({"_id": req.params.id})
 
 module.exports = router;
 ```
-[Screenshot6](Media/Project3/Screenshot6.png)
+![Screenshot6](Media/Project3/Screenshot6.png)
 
 ____
 MongoDB Database
@@ -341,7 +341,7 @@ Start your server using the command:
 node index.js
 ```
 You should see a message ‘Database connected successfully’
-[Screenshot7](Media/Project3/Screenshot7.png)
+![Screenshot7](Media/Project3/Screenshot7.png)
 ___
 Testing Backend Code without Frontend using RESTful API
 ___
@@ -355,7 +355,7 @@ There are 3 things to achieve by the use of Postman.
 
 Open up Postman, create a POST request to the API `http://<PublicIP-or-PublicDNS>:5000/api/todos`. This request sends a new task to our To-Do list so the application could store it in the database.
 
-[Screenshot8](Media/Project3/Screenshot8.png)
+![Screenshot8](Media/Project3/Screenshot8.png)
 
 Create a GET request to the API on http://<PublicIP-or-PublicDNS>:5000/api/todos. This request retrieves all existing records from out To-do application.
 
@@ -363,7 +363,7 @@ Create a GET request to the API on http://<PublicIP-or-PublicDNS>:5000/api/todos
 
 Create a DELETE request to the API on http://<PublicIP-or-PublicDNS>:5000/api/todos. This request deletes specified existing records from out To-do application.
 
-[Screenshot10](Media/Project3/Screenshot10.png)
+![Screenshot10](Media/Project3/Screenshot10.png)
 
 ## Step 2 - Frontend Creation
 To start out with the frontend of the To-do app, we will use the create-react-app command to scaffold our app.
@@ -391,9 +391,9 @@ In Todo folder open the package.json file. Change the scripts handle to the code
 "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
 },
 ```
-[Screenshot11](Media/Project3/Screenshot11.png)
+![Screenshot11](Media/Project3/Screenshot11.png)
 
-[Screenshot12](Media/Project3/Screenshot12.png)
+![Screenshot12](Media/Project3/Screenshot12.png)
 
 ____
 Configure Proxy in package.json
@@ -416,11 +416,11 @@ First, ensure you are inside the Todo directory:
 ```bash
 npm run dev
 ```
-[Screenshot13](Media/Project3/Screenshot13.png)
+![Screenshot13](Media/Project3/Screenshot13.png)
 
 Your app should open and start running on localhost:3000
 
-[Screenshot14](Media/Project3/Screenshot14.png)
+![Screenshot14](Media/Project3/Screenshot14.png)
 ___
 Creating React Components
 ___
@@ -444,7 +444,7 @@ Inside ‘components’ directory create three files Input.js, ListTodo.js and T
 ```bash
 touch Input.js ListTodo.js Todo.js
 ```
-[Screenshot15](Media/Project3/Screenshot15.png)
+![Screenshot15](Media/Project3/Screenshot15.png)
 
 Input code into various files
 
@@ -458,13 +458,13 @@ npm install axios
 ```
 We need to make little adjustment to our react code. Delete the logo and adjust our App.js.
 
-[Screenshot16](Media/Project3/Screenshot16.png)
+![Screenshot16](Media/Project3/Screenshot16.png)
 
 Go to the Todo directory and run:
 ```bash
 npm run dev
 ```
-[Screenshot17](Media/Project3/Screenshot17.png)
+![Screenshot17](Media/Project3/Screenshot17.png)
 
 
 
