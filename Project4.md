@@ -24,7 +24,7 @@ Install NodeJS
 ```bash
 sudo apt install -y nodejs
 ```
-![Screenshot1](Media/Project4/Screenshot1)
+![Screenshot1](Media/Project4/Screenshot1.png)
 
 ## Step 2 - Installing MongoDB
 MongoDB stores data in flexible, JSON-like documents.For our example application, we are adding book records to MongoDB that contain book name, isbn number, author, and number of pages.
@@ -65,7 +65,7 @@ In the Books directory, Initialize npm project
 ```bash
 npm init
 ```
-![Screenshot2](Media/Project4/Screenshot2)
+![Screenshot2](Media/Project4/Screenshot2.png)
 
 Add a file to it named server.js
 ```bash
@@ -128,7 +128,7 @@ Start the server by running:
 ```bash
 node server.js
 ```
-![Screenshot3](Media/Project4/Screenshot3)
+![Screenshot3](Media/Project4/Screenshot3.png)
 
 Check for a response "Server up: http://localhost:3300"
 
@@ -142,7 +142,7 @@ To access it from the Internet. You need to open TCP port 3300 in your AWS Web C
 
 Access the Book Register web application from the Internet with a browser using Public IP address or Public DNS name.
 
-![Screenshot4](Media/Project4/Screenshot4)
+![Screenshot4](Media/Project4/Screenshot4.png)
 
-![Screenshot5](Media/Project4/Screenshot5)
+![Screenshot5](Media/Project4/Screenshot5.png)
 
