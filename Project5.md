@@ -46,15 +46,11 @@ Client-Server refers to an architecture in which two or more computers are conne
 
     ![Screenshot5](Media/Project5/Screenshot5.png)
 
-5. You might need to configure MySQL server to allow connections from remote hosts.
+5. You might need to configure MySQL server to allow connections from remote hosts.Open vim using the commands below and Replace ‘127.0.0.1’ to ‘0.0.0.0’:
     ```bash
     sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
     ```
     ![Screenshot6](Media/Project5/Screenshot6.png)
-
-    Replace ‘127.0.0.1’ to ‘0.0.0.0’ like this:
-
-    ![Screenshot7](Media/Project5/Screenshot7.png)
 
 6. From mysql client Linux Server connect remotely to mysql server Database Engine without using SSH. You must use the mysql utility to perform this action.
 
